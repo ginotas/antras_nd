@@ -23,13 +23,13 @@ code {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background-color: bisque;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
   border: solid 3px black;
-
+  
+  
 }
 
 .mygtukas {
@@ -43,5 +43,12 @@ code {
   cursor: pointer;
   margin: 10px;
   
+  
+ 
+}
+
+.inputai {
+  padding: 10px;
+  margin: 5px;
  
 }
