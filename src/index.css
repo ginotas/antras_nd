@@ -20,8 +20,8 @@ code {
 }
 
 .rutulys {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
   background-color: bisque;
   display: flex;
@@ -32,36 +32,16 @@ code {
 
 }
 
-.mygtukas1 {
-  width: 100px;
-  height: 50px;
-  margin: 10px;
-  color: azure;
-  background-color: red;
+.mygtukas {
   
+  background-color: purple;
+  padding: 10px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: yellow;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
   
-}
-
-.mygtukas2 {
-  width: 100px;
-  height: 50px;
-  margin: 10px;
-  color: azure;
-  background-color: blue;
-}
-
-.mygtukas3 {
-  width: 100px;
-  height: 50px;
-  margin: 10px;
-  color: azure;
-  background-color: green;
-}
-
-.mygtukas4 {
-  width: 100px;
-  height: 50px;
-  margin: 10px;
-  color: azure;
-  background-color: black;
+ 
 }

@@ -1,71 +1,55 @@
 
 import { render } from "@testing-library/react";
 import React from "react";
-//import ChangeRed from "./components/ChangeRed";
+import ChangeColorButton from "./ChangeColorButton";
+
 
 
 class App extends React.Component {
 
         constructor() {
             super();
-            this.state = {bg: "black"};
+            this.state = {bg: "yellow"};
         }
 
-        red = () => {
 
-            this.setState(state => {
-                return(
-                    {bg: "red"}
-                    )
-            });
-        };
+        changeColorB = () => {
+            this.setState(
+                {
+                    bg: "black"
+                }
+            );
+        }
 
-        blue = () => {
+        changeColorR = () => {
+            this.setState(
+                {
+                    bg: "red"
+                }
+            );
+        }
 
-            this.setState(state => {
-                return(
-                    {bg: "blue"}
-                    )
-            });
-
-        };
-
-        green = () => {
-            
-            this.setState(state => {
-                return(
-                    {bg: "green"}
-                    )
-            });
-
-        };
-
-        black = () => {
-            
-            this.setState(state => {
-                return(
-                    {bg: "black"}
-                    )
-            });
-
-        };
+        changeColorG = () => {
+            this.setState(
+                {
+                    bg: "green"
+                }
+            );
+        }
 
 
 
-    render() { 
-        
-        return (
-            <div>
-            <div className="rutulys" style={{backgroundColor: this.state.bg}}></div>
-            <button className="mygtukas1" onClick={this.red}>Raudonas</button>
-            <button className="mygtukas2" onClick={this.blue}>Melynas</button>
-            <button className="mygtukas3" onClick={this.green}>Zalias</button>
-            <button className="mygtukas4" onClick={this.black}>Juodas</button>
-            </div>
 
-    );
-
-    }
+        render () {
+            return (
+                <div className="rutulys" style={{backgroundColor: this.state.bg}}>
+                    <ChangeColorButton color="black" clickToChangeColor={this.changeColorB}></ChangeColorButton>
+                    <ChangeColorButton color="red" clickToChangeColor={this.changeColorR}></ChangeColorButton>
+                    <ChangeColorButton color="green" clickToChangeColor={this.changeColorG}></ChangeColorButton>
+                </div>
+              
+                );
+            }
 }
 
 
